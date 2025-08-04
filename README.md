@@ -2,7 +2,7 @@
 
 This repository contains comprehensive automated tests for the [Sauce Demo](https://www.saucedemo.com) e-commerce website using Playwright, following industry best practices and the Page Object Model pattern. The purpose of this repository is to demonstrate how to generate Playwright test cases for a website using Playwright's Modern Component Pattern (MCP). The provided prompt can be adapted to generate test cases for any website.
 
-## Test Case Generation
+## Test Case Generation Prompt for Playwright MCP
 
 You can generate test cases for the Sauce Demo website using the following prompt:
 
