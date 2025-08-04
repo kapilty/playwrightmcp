@@ -1,0 +1,593 @@
+{
+  "config": {
+    "configFile": "/Users/kapil/Downloads/smarttos1/playwrightmcp/playwright.config.ts",
+    "rootDir": "/Users/kapil/Downloads/smarttos1/playwrightmcp/tests",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {
+      "actualWorkers": 2
+    },
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "html",
+        {
+          "open": "never"
+        }
+      ],
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "test-results.json"
+        }
+      ],
+      [
+        "junit",
+        {
+          "outputFile": "test-results.xml"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 300000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "/Users/kapil/Downloads/smarttos1/playwrightmcp/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {
+          "actualWorkers": 2
+        },
+        "id": "chromium",
+        "name": "chromium",
+        "testDir": "/Users/kapil/Downloads/smarttos1/playwrightmcp/tests",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "updateSourceMethod": "patch",
+    "version": "1.54.2",
+    "workers": 2,
+    "webServer": null
+  },
+  "suites": [
+    {
+      "title": "auth/authentication.spec.ts",
+      "file": "auth/authentication.spec.ts",
+      "column": 0,
+      "line": 0,
+      "specs": [],
+      "suites": [
+        {
+          "title": "Authentication @auth",
+          "file": "auth/authentication.spec.ts",
+          "line": 12,
+          "column": 6,
+          "specs": [],
+          "suites": [
+            {
+              "title": "Successful Login Scenarios @smoke",
+              "file": "auth/authentication.spec.ts",
+              "line": 23,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "@smoke should authenticate with valid standard user credentials",
+                  "ok": false,
+                  "tags": [
+                    "auth",
+                    "smoke",
+                    "smoke"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 0,
+                          "parallelIndex": 0,
+                          "status": "failed",
+                          "duration": 629,
+                          "error": {
+                            "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n",
+                            "stack": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n    at LoginPage.navigate (/Users/kapil/Downloads/smarttos1/playwrightmcp/tests/pages/login.page.ts:26:21)\n    at /Users/kapil/Downloads/smarttos1/playwrightmcp/tests/auth/authentication.spec.ts:20:21",
+                            "location": {
+                              "file": "/Users/kapil/Downloads/smarttos1/playwrightmcp/tests/pages/login.page.ts",
+                              "column": 21,
+                              "line": 26
+                            },
+                            "snippet": "\u001b[90m   at \u001b[39mpages/login.page.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m navigate()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m   }\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m"
+                          },
+                          "errors": [
+                            {
+                              "location": {
+                                "file": "/Users/kapil/Downloads/smarttos1/playwrightmcp/tests/pages/login.page.ts",
+                                "column": 21,
+                                "line": 26
+                              },
+                              "message": "Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/\nCall log:\n\u001b[2m  - navigating to \"https://www.saucedemo.com/\", waiting until \"load\"\u001b[22m\n\n\n\u001b[90m   at \u001b[39mpages/login.page.ts:26\n\n\u001b[0m \u001b[90m 24 |\u001b[39m \u001b[90m   */\u001b[39m\n \u001b[90m 25 |\u001b[39m   \u001b[36masync\u001b[39m navigate()\u001b[33m:\u001b[39m \u001b[33mPromise\u001b[39m\u001b[33m<\u001b[39m\u001b[36mvoid\u001b[39m\u001b[33m>\u001b[39m {\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 26 |\u001b[39m     \u001b[36mawait\u001b[39m \u001b[36mthis\u001b[39m\u001b[33m.\u001b[39mpage\u001b[33m.\u001b[39mgoto(\u001b[32m'/'\u001b[39m)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                     \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 27 |\u001b[39m   }\n \u001b[90m 28 |\u001b[39m\n \u001b[90m 29 |\u001b[39m   \u001b[90m/**\u001b[39m\u001b[0m\n\u001b[2m    at LoginPage.navigate (/Users/kapil/Downloads/smarttos1/playwrightmcp/tests/pages/login.page.ts:26:21)\u001b[22m\n\u001b[2m    at /Users/kapil/Downloads/smarttos1/playwrightmcp/tests/auth/authentication.spec.ts:20:21\u001b[22m"
+                            }
+                          ],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:08.146Z",
+                          "annotations": [],
+                          "attachments": [
+                            {
+                              "name": "screenshot",
+                              "contentType": "image/png",
+                              "path": "/Users/kapil/Downloads/smarttos1/playwrightmcp/test-results/auth-authentication-Authen-7ce84-d-standard-user-credentials-chromium/test-failed-1.png"
+                            },
+                            {
+                              "name": "video",
+                              "contentType": "video/webm",
+                              "path": "/Users/kapil/Downloads/smarttos1/playwrightmcp/test-results/auth-authentication-Authen-7ce84-d-standard-user-credentials-chromium/video.webm"
+                            }
+                          ],
+                          "errorLocation": {
+                            "file": "/Users/kapil/Downloads/smarttos1/playwrightmcp/tests/pages/login.page.ts",
+                            "column": 21,
+                            "line": 26
+                          }
+                        }
+                      ],
+                      "status": "unexpected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-b0756b1edd4c1d5db9e8",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 24,
+                  "column": 9
+                },
+                {
+                  "title": "@regression should verify login form elements are properly displayed",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "smoke",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 861,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:08.146Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-19f5db2b9b6b99f6049b",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 40,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Failed Authentication Scenarios @regression",
+              "file": "auth/authentication.spec.ts",
+              "line": 51,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "@regression should display error message for invalid credentials",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "regression",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 963,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:11.690Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-d59650a215e165b377c0",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 52,
+                  "column": 9
+                },
+                {
+                  "title": "@regression should prevent login for locked out user account",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "regression",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 805,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:09.257Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-143471dbd37ce5d33cec",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 68,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Special User Scenarios @regression",
+              "file": "auth/authentication.spec.ts",
+              "line": 85,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "@regression should login with problem user and identify UI issues",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "regression",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 1019,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:10.068Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-c83b13bbf52d04cb03e1",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 86,
+                  "column": 9
+                },
+                {
+                  "title": "@slow should handle performance glitch user with extended timeout",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "regression",
+                    "slow"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 1,
+                          "parallelIndex": 1,
+                          "status": "passed",
+                          "duration": 6257,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:11.094Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-7d3be11d674c545e9e74",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 109,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Form Validation @ui",
+              "file": "auth/authentication.spec.ts",
+              "line": 131,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "@regression should validate empty username and password fields",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "ui",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 791,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:12.877Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-7088bd36da5778c7e650",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 132,
+                  "column": 9
+                },
+                {
+                  "title": "@regression should validate username field when password is empty",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "ui",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 836,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:13.674Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-4ab69de76402d5304640",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 145,
+                  "column": 9
+                },
+                {
+                  "title": "@regression should validate password field when username is empty",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "ui",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 812,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:14.517Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-cbb0e417fac0e5199848",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 162,
+                  "column": 9
+                }
+              ]
+            },
+            {
+              "title": "Input Validation @regression",
+              "file": "auth/authentication.spec.ts",
+              "line": 180,
+              "column": 8,
+              "specs": [
+                {
+                  "title": "@regression should handle special characters in username field",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "regression",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 844,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:15.336Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-2e2d948c94bfca4cbf6e",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 181,
+                  "column": 9
+                },
+                {
+                  "title": "@regression should handle extremely long username input",
+                  "ok": true,
+                  "tags": [
+                    "auth",
+                    "regression",
+                    "regression"
+                  ],
+                  "tests": [
+                    {
+                      "timeout": 30000,
+                      "annotations": [],
+                      "expectedStatus": "passed",
+                      "projectId": "chromium",
+                      "projectName": "chromium",
+                      "results": [
+                        {
+                          "workerIndex": 2,
+                          "parallelIndex": 0,
+                          "status": "passed",
+                          "duration": 881,
+                          "errors": [],
+                          "stdout": [],
+                          "stderr": [],
+                          "retry": 0,
+                          "startTime": "2025-08-04T10:30:16.186Z",
+                          "annotations": [],
+                          "attachments": []
+                        }
+                      ],
+                      "status": "expected"
+                    }
+                  ],
+                  "id": "62b8d4dbcee4331d62dc-90492f5e1880e6f5a37b",
+                  "file": "auth/authentication.spec.ts",
+                  "line": 197,
+                  "column": 9
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "errors": [],
+  "stats": {
+    "startTime": "2025-08-04T10:30:04.850Z",
+    "duration": 12551.805,
+    "expected": 10,
+    "skipped": 0,
+    "unexpected": 1,
+    "flaky": 0
+  }
+}

@@ -1,0 +1,62 @@
+<testsuites id="" name="" tests="11" failures="1" skipped="0" errors="0" time="12.551805">
+<testsuite name="auth/authentication.spec.ts" timestamp="2025-08-04T10:30:06.173Z" hostname="chromium" tests="11" failures="1" skipped="0" time="14.698" errors="0">
+<testcase name="Authentication @auth › Successful Login Scenarios @smoke › @smoke should authenticate with valid standard user credentials" classname="auth/authentication.spec.ts" time="0.629">
+<failure message="authentication.spec.ts:24:9 @smoke should authenticate with valid standard user credentials" type="FAILURE">
+<![CDATA[  [chromium] › auth/authentication.spec.ts:24:9 › Authentication @auth › Successful Login Scenarios @smoke › @smoke should authenticate with valid standard user credentials 
+
+    Error: page.goto: net::ERR_CONNECTION_RESET at https://www.saucedemo.com/
+    Call log:
+      - navigating to "https://www.saucedemo.com/", waiting until "load"
+
+
+       at pages/login.page.ts:26
+
+      24 |    */
+      25 |   async navigate(): Promise<void> {
+    > 26 |     await this.page.goto('/');
+         |                     ^
+      27 |   }
+      28 |
+      29 |   /**
+        at LoginPage.navigate (/Users/kapil/Downloads/smarttos1/playwrightmcp/tests/pages/login.page.ts:26:21)
+        at /Users/kapil/Downloads/smarttos1/playwrightmcp/tests/auth/authentication.spec.ts:20:21
+
+    attachment #1: screenshot (image/png) ──────────────────────────────────────────────────────────
+    ../test-results/auth-authentication-Authen-7ce84-d-standard-user-credentials-chromium/test-failed-1.png
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+
+    attachment #2: video (video/webm) ──────────────────────────────────────────────────────────────
+    ../test-results/auth-authentication-Authen-7ce84-d-standard-user-credentials-chromium/video.webm
+    ────────────────────────────────────────────────────────────────────────────────────────────────
+]]>
+</failure>
+<system-out>
+<![CDATA[
+[[ATTACHMENT|test-results/auth-authentication-Authen-7ce84-d-standard-user-credentials-chromium/test-failed-1.png]]
+
+[[ATTACHMENT|test-results/auth-authentication-Authen-7ce84-d-standard-user-credentials-chromium/video.webm]]
+]]>
+</system-out>
+</testcase>
+<testcase name="Authentication @auth › Successful Login Scenarios @smoke › @regression should verify login form elements are properly displayed" classname="auth/authentication.spec.ts" time="0.861">
+</testcase>
+<testcase name="Authentication @auth › Failed Authentication Scenarios @regression › @regression should display error message for invalid credentials" classname="auth/authentication.spec.ts" time="0.963">
+</testcase>
+<testcase name="Authentication @auth › Failed Authentication Scenarios @regression › @regression should prevent login for locked out user account" classname="auth/authentication.spec.ts" time="0.805">
+</testcase>
+<testcase name="Authentication @auth › Special User Scenarios @regression › @regression should login with problem user and identify UI issues" classname="auth/authentication.spec.ts" time="1.019">
+</testcase>
+<testcase name="Authentication @auth › Special User Scenarios @regression › @slow should handle performance glitch user with extended timeout" classname="auth/authentication.spec.ts" time="6.257">
+</testcase>
+<testcase name="Authentication @auth › Form Validation @ui › @regression should validate empty username and password fields" classname="auth/authentication.spec.ts" time="0.791">
+</testcase>
+<testcase name="Authentication @auth › Form Validation @ui › @regression should validate username field when password is empty" classname="auth/authentication.spec.ts" time="0.836">
+</testcase>
+<testcase name="Authentication @auth › Form Validation @ui › @regression should validate password field when username is empty" classname="auth/authentication.spec.ts" time="0.812">
+</testcase>
+<testcase name="Authentication @auth › Input Validation @regression › @regression should handle special characters in username field" classname="auth/authentication.spec.ts" time="0.844">
+</testcase>
+<testcase name="Authentication @auth › Input Validation @regression › @regression should handle extremely long username input" classname="auth/authentication.spec.ts" time="0.881">
+</testcase>
+</testsuite>
+</testsuites>

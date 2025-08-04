@@ -1,0 +1,43 @@
+{
+  "name": "sauce-demo-playwright-tests",
+  "version": "1.0.0",
+  "description": "Comprehensive Playwright tests for Sauce Demo website",
+  "main": "index.js",
+  "scripts": {
+    "test": "playwright test",
+    "test:auth": "playwright test tests/auth/",
+    "test:cart": "playwright test tests/cart/",
+    "test:sorting": "playwright test tests/sorting/",
+    "test:checkout": "playwright test tests/checkout/",
+    "test:navigation": "playwright test tests/navigation/",
+    "test:smoke": "playwright test --grep @smoke",
+    "test:regression": "playwright test --grep @regression",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "report": "playwright show-report",
+    "install-browsers": "playwright install",
+    "build": "tsc",
+    "lint": "eslint . --ext .ts"
+  },
+  "keywords": [
+    "playwright",
+    "testing",
+    "automation",
+    "sauce-demo",
+    "e-commerce"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "@playwright/test": "^1.40.0",
+    "@types/node": "^20.0.0",
+    "@faker-js/faker": "^8.0.0",
+    "typescript": "^5.0.0",
+    "@typescript-eslint/eslint-plugin": "^6.0.0",
+    "@typescript-eslint/parser": "^6.0.0",
+    "eslint": "^8.0.0"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  }
+} 
