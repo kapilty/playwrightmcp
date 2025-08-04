@@ -16,7 +16,9 @@ test-results/
 playwright-report/
 playwright/.cache/
 playwright/.screenshots/
-
+test-results.xml
+test-results.json
+screenshots/
 # Environment variables
 .env
 .env.local
