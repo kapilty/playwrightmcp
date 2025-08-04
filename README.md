@@ -2,6 +2,16 @@
 
 This repository contains comprehensive automated tests for the [Sauce Demo](https://www.saucedemo.com) e-commerce website using Playwright, following industry best practices and the Page Object Model pattern.
 
+## Test Case Generation
+
+You can generate test cases for the Sauce Demo website using the following prompt:
+
+```
+I would like you to write me some tests for https://www.saucedemo.com. Please open up and login with user 'standard_user' and password 'secret'. Explore it briefly and then outline five functional aspects that should be tested. Please follow the guidelines as mentioned in @playwright-rules.md
+```
+
+This prompt will generate test cases that align with the testing structure and guidelines used in this repository.
+
 ## Overview
 
 The tests cover five main functional aspects of the Sauce Demo website:
@@ -41,16 +51,6 @@ The tests cover five main functional aspects of the Sauce Demo website:
 
 - Node.js (version 16 or higher)
 - npm or yarn package manager
-
-## Test Case Generation
-
-You can generate test cases for the Sauce Demo website using the following prompt:
-
-```
-I would like you to write me some tests for https://www.saucedemo.com. Please open up and login with user 'standard_user' and password 'secret'. Explore it briefly and then outline five functional aspects that should be tested. Please follow the guidelines as mentioned in @playwright-rules.md
-```
-
-This prompt will generate test cases that align with the testing structure and guidelines used in this repository.
 
 ## Installation
 
