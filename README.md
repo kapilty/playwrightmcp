@@ -42,6 +42,16 @@ The tests cover five main functional aspects of the Sauce Demo website:
 - Node.js (version 16 or higher)
 - npm or yarn package manager
 
+## Test Case Generation
+
+You can generate test cases for the Sauce Demo website using the following prompt:
+
+```
+I would like you to write me some tests for https://www.saucedemo.com. Please open up and login with user 'standard_user' and password 'secret'. Explore it briefly and then outline five functional aspects that should be tested. Please follow the guidelines as mentioned in @playwright-rules.md
+```
+
+This prompt will generate test cases that align with the testing structure and guidelines used in this repository.
+
 ## Installation
 
 1. Clone or download this repository
@@ -245,6 +255,64 @@ If tests fail, traces are automatically generated and can be viewed with:
 npx playwright show-trace trace.zip
 ```
 
+## IDE Integration with Playwright MCP
+
+### Installation
+
+1. **Install Playwright MCP**
+   ```bash
+   npm install -D @playwright/test @playwright/mcp
+   ```
+
+2. **Install Playwright Browsers**
+   ```bash
+   npx playwright install
+   ```
+
+### IDE Setup
+
+#### Windsurf
+1. Open the command palette (`Cmd+Shift+P` on Mac, `Ctrl+Shift+P` on Windows/Linux)
+2. Search for and select "Install Extension"
+3. Search for "Playwright MCP" and install it
+4. Restart Windsurf when prompted
+5. Open any test file and use the built-in test runner UI
+
+#### Cursor
+1. Install the official Playwright extension from the Cursor extensions marketplace
+2. Reload Cursor after installation
+3. The extension will automatically detect Playwright tests in your workspace
+4. Use the test explorer in the sidebar to run and debug tests
+
+#### GitHub Copilot
+1. Install the GitHub Copilot extension
+2. Open a test file (`.spec.ts` or `.test.ts`)
+3. Use Copilot's inline suggestions to write and improve your tests
+4. For test generation, type a comment describing the test and let Copilot suggest the implementation
+
+### Running Tests
+
+Run all tests:
+```bash
+npx playwright test
+```
+
+Run tests in UI mode:
+```bash
+npx playwright test --ui
+```
+
+Run a specific test file:
+```bash
+npx playwright test tests/example.spec.ts
+```
+
+### Debugging
+- Use the built-in debugger in your IDE
+- Add `test.setTimeout(0)` to pause test execution
+- Use `page.pause()` to enter debug mode during test execution
+- Check the test traces in the `test-results` directory for failed tests
+
 ## Contributing
 
 When adding new tests:
@@ -256,4 +324,4 @@ When adding new tests:
 
 ## License
 
-MIT License - feel free to use these tests for your own projects. 
+MIT License - feel free to use these tests for your own projects.
